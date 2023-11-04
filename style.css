@@ -12,9 +12,14 @@
   --onyx: #343a40ff;
   --eerie-black: #212529ff;
 
+  --coral: #FC814Aff;
+
   /* Font sizes */
   --font-size-title: 40px;
   --font-size-button: 16px;
+
+  --font-size-calculator-result: 40px;
+  --font-weight-calculator-result: 600px;
 
   /* Font Weights */
   --font-weight-title: 800;
@@ -22,46 +27,96 @@
 }
 
 body {
-  padding: 16px;
-  background-color: var(--seasalt);
-}
-
-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--french-gray-2);
+  min-height: 100vh;
+  font-family: "Monaco", monospace;
+  font-weight: 900;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  width: 100%;
 }
 
 #calculator.calculator{
   display: flex;
   flex-direction: column;
-  align-content: space-around;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
 
-  width: 400px;
-  height: 600px;
+  width: 330px;
+  height: 400px;
   padding: 16px;
-  background-color: var(--slate-gray);
+  background-color: var(--outer-space);
   border-radius: 5%;
+  gap:16px;
+
+  font-size: 16px;
+  color: var(--seasalt);
+  box-shadow: rgba(52, 58, 64, 0.6) 0px 8px 24px;
 }
 
 .calculator__row {
   display: flex;
-  justify-content: stretch;
-  height: 30px;
-  background-color: var(--antiflash-white);
+  height: 100%;;
+  width: 100%;
+  gap: 8px;
 }
 
-/* .calculator__button { */
-/*   height: 30px; */
-/*   width: 60px; */
-/*   background-color: var(--antiflash-white); */
-/*   padding: 16px; */
-/* } */
+.calculator__row > * {
+  flex-grow: 1;
+}
+
+#screen.calculator__screen {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  text-align: right;
+  font-size: var(--font-size-calculator-result);
+  font-weight: var(--font-weight-calculator-result);
+  margin-bottom:10px;
+}
+
+#input,
+#output {
+  width: 100%;
+}
+
+#input {
+  height: 20%;
+  font-size: 16px;
+  font-weight: var(--font-weight-calculator-result);
+  color: var(--french-gray-2);
+}
+
+#output {
+  height: 60%;
+  font-size: var(--font-size-calculator-result);
+  font-weight: var(--font-weight-calculator-result);
+}
+
+.calculator__button {
+  border-radius: 5%;
+  border: 1px solid var(--outer-space);
+  box-shadow: rgba(52, 58, 64, 0.6) 0px 8px 24px;
+  background-color: var(--outer-space);
+  color: var(--seasalt);
+}
+
+.calculator__button:hover {
+  background-color: var(--slate-gray);
+  color: white;
+}
+
+.calculator__operator {
+  color: var(--coral);
+}
+
+#equals {
+  flex: 0 0 50%;
+}
