@@ -113,7 +113,7 @@ main {
   color: white;
 }
 
-.calculator__operator {
+.calculator__operator, .calculator__aux {
   color: var(--coral);
 }
 

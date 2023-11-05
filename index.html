@@ -13,17 +13,17 @@
     <main>
       <section class="calculator" id="calculator">
         <header class="calculator__row calculator__screen" id="screen">
-          <div id="output"><p>40</p></div>
-          <div id="input"><p>10 x 4</p></div>
+          <div id="output"><p>0</p></div>
+          <div id="input"><p></p></div>
         </header>
         <section class="calculator__row">
-          <button type="calculator__button" id="clear" class="calculator__button calculator__operator" >
-            <i class="fa-solid fa-c calculator__operator"></i>
+          <button type="calculator__button" id="clear" class="calculator__button calculator__aux" >
+            <i class="fa-solid fa-c"></i>
           </button>
-          <button id="delete" class="calculator__button calculator__operator">
-            <i class="fa-solid fa-delete-left calculator__operator"></i>
+          <button id="delete" class="calculator__button calculator__aux">
+            <i class="fa-solid fa-delete-left"></i>
           </button>
-          <button class="calculator__button calculator__operator">
+          <button value="modulo" class="calculator__button calculator__operator">
             <i class="fa-solid fa-percent calculator__operator"></i>
           </button>
           <button value="divide" class="calculator__button calculator__operator">
@@ -31,13 +31,13 @@
           </button>
         </section>
         <section class="calculator__row">
-          <button value="7" class="calculator__button">
+          <button value="7" class="calculator__button calculator__number">
             <i class="fa-solid fa-7"></i>
           </button>
-          <button value="8" class="calculator__button">
+          <button value="8" class="calculator__button calculator__number">
             <i class="fa-solid fa-8"></i>
           </button>
-          <button value="9" class="calculator__button">
+          <button value="9" class="calculator__button calculator__number">
             <i class="fa-solid fa-9"></i>
           </button>
           <button value="multiply" class="calculator__button calculator__operator">
@@ -45,41 +45,41 @@
           </button>
         </section>
         <section class="calculator__row">
-          <button value="6" class="calculator__button">
-            <i class="fa-solid fa-6"></i>
-          </button>
-          <button value="5" class="calculator__button">
-            <i class="fa-solid fa-5"></i>
-          </button>
-          <button value="4" class="calculator__button">
+          <button value="4" class="calculator__button calculator__number">
             <i class="fa-solid fa-4"></i>
           </button>
-          <button  class="calculator__button calculator__operator">
+          <button value="5" class="calculator__button calculator__number">
+            <i class="fa-solid fa-5"></i>
+          </button>
+          <button value="6" class="calculator__button calculator__number">
+            <i class="fa-solid fa-6"></i>
+          </button>
+          <button value="subtract" class="calculator__button calculator__operator">
             <i class="fa-solid fa-minus"></i>
           </button>
         </section>
         <section class="calculator__row">
-          <button value="3" class="calculator__button">
+          <button value="1" class="calculator__button calculator__number">
             <i class="fa-solid fa-1"></i>
           </button>
-          <button value="2" class="calculator__button">
+          <button value="2" class="calculator__button calculator__number">
             <i class="fa-solid fa-2"></i>
           </button>
-          <button value="1" class="calculator__button">
+          <button value="3" class="calculator__button calculator__number">
             <i class="fa-solid fa-3"></i>
           </button>
-          <button value="0" class="calculator__button calculator__operator">
+          <button value="add" class="calculator__button calculator__operator">
             <i class="fa-solid fa-plus"></i>
           </button>
         </section>
         <section class="calculator__row">
-          <button value="0" class="calculator__button">
+          <button value="0" class="calculator__button calculator__number">
             <i class="fa-solid fa-0"></i>
           </button>
           <button  class="calculator__button" style="font-size:30px; font-weight:900;">
             .
           </button>
-          <button  class="calculator__button calculator__operator" id="equals">
+          <button  class="calculator__button calculator__aux" id="equals">
             <i class="fa-solid fa-equals"></i>
           </button>
         </section>
